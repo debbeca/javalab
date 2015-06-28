@@ -30,7 +30,7 @@ import websphinx.Page;
 public class ImageCrawler extends Crawler {
 
 	public String imgFolder ;
-	public String mainPath = new String("C:/Users/Walid/Desktop/dump/images");
+	public String mainPath = new String("images");
 	
 	public ImageCrawler( ) {
         super();  // Do what the parent  crawler would do

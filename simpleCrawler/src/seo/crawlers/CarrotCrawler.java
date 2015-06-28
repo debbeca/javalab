@@ -10,13 +10,13 @@ import websphinx.DownloadParameters;
 import websphinx.Link;
 import websphinx.Page;
 
-public class KeywordCrawler extends Crawler {
+public class CarrotCrawler extends Crawler {
 	public int hnDepth;
 	// public WebsiteData websiteData;
 
 	public ArrayList<org.carrot2.core.Document> documentList;
 
-	public KeywordCrawler() {
+	public CarrotCrawler() {
 		super();
 		// websiteData = new WebsiteData();
 
@@ -34,7 +34,7 @@ public class KeywordCrawler extends Crawler {
 
 	}
 
-	public KeywordCrawler(int depth) {
+	public CarrotCrawler(int depth) {
 		super();
 		// websiteData = new WebsiteData();
 		

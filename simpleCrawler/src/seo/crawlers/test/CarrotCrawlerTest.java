@@ -12,12 +12,11 @@ import org.carrot2.core.Controller;
 import org.carrot2.core.ControllerFactory;
 import org.carrot2.core.ProcessingResult;
 
+import seo.crawlers.CarrotCrawler;
+import websphinx.Link;
 import carot.example.ConsoleFormatter;
 
-import seo.crawlers.KeywordCrawler;
-import websphinx.Link;
-
-public class KeywordCrawlerTest {
+public class CarrotCrawlerTest {
 	
 
 
@@ -27,8 +26,8 @@ public class KeywordCrawlerTest {
 		// TODO Auto-generated method stub
 		ArrayList<org.carrot2.core.Document> documents = new ArrayList<org.carrot2.core.Document>();
 		
-		KeywordCrawler crawler = new KeywordCrawler(1);
-		KeywordCrawler crawler2 = new KeywordCrawler(1);
+		CarrotCrawler crawler = new CarrotCrawler(1);
+		CarrotCrawler crawler2 = new CarrotCrawler(1);
 		    try {
 		      	
 		      crawler.setRoot(new Link(new URL("http://www.assurland.com/")));

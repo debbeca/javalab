@@ -2,10 +2,9 @@ package test;
 
 import java.net.URL;
 
-import crawling.ContentCrawler;
-import crawling.Frequency;
-
 import websphinx.Link;
+import webwatch.crawling.ContentCrawler;
+import webwatch.crawling.Frequency;
 
 public class ContentTest {
 
@@ -15,11 +14,10 @@ public class ContentTest {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 Frequency sub = new Frequency();
-		  ContentCrawler crawler = new ContentCrawler(sub);
+		  ContentCrawler crawler = new ContentCrawler(sub , 1 );
 		    try {
-		    //  crawler.setTargetDir("C:/Users/walid/Desktop/dump");
-		     // crawler.init();
-		      crawler.setRoot(new Link(new URL("http://www.socialistrevolution.org/1483/london-south-bank-students-occupy/")));
+		    	System.out.println("start");
+		      crawler.setRoot(new Link(new URL("http://www.noswearing.com/dictionary")));
 		      crawler.run();
 		    	} catch (Exception e) {
 		    		e.printStackTrace();

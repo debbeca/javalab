@@ -1,6 +1,6 @@
-package observer;
+package webwatch.observer;
 
-import crawling.Frequency;
+import webwatch.crawling.Frequency;
 
 public class BinObserver extends Observer { 
 	  public BinObserver(Frequency f ) { 

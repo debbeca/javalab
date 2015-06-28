@@ -1,9 +1,7 @@
-package crawling;
+package webwatch.crawling;
 
 
 
-
-import iomanager.Dictionnary;
 
 import java.util.HashSet;
 import java.util.regex.Matcher;
@@ -13,18 +11,25 @@ import websphinx.Crawler;
 import websphinx.DownloadParameters;
 import websphinx.Link;
 import websphinx.Page;
+import webwatch.iomanager.Dictionnary;
 
 
 // Our own Crawler class extends the WebSphinx Crawler
 public class ContentCrawler extends Crawler {
    public Frequency frq ;
-	public ContentCrawler( Frequency fr) {
+	public ContentCrawler( Frequency fr , int depth) {
+        super();  // Do what the parent  crawler would do
+        setDomain(Crawler.SUBTREE);
+        setMaxDepth(depth);
+        frq= fr;
+    }
+    
+	public ContentCrawler( Frequency fr ) {
         super();  // Do what the parent  crawler would do
         setDomain(Crawler.SUBTREE);
         setMaxDepth(0);
         frq= fr;
     }
-    
     // We could choose not to visit a link based on certain circumstances
     // For now we always visit the link
     public boolean shouldVisit(Link l) {
@@ -36,7 +41,7 @@ public class ContentCrawler extends Crawler {
     public void visit(Page page) {
         //System.out.println("Visiting: " + page.getTitle());
         String content = page.getContent();
-        System.out.println("Visitin : "+ page.getTitle());
+        System.out.println("Visiting.. : "+ page.getTitle());
         //System.out.println("LINK : "+ page.getOrigin().toHTML());
         /*try {
             Thread.sleep(1000L);

@@ -1,4 +1,4 @@
-package observer;
+package webwatch.observer;
 
 public class Subject  { 
 	  private Observer[] observers = new Observer[9];

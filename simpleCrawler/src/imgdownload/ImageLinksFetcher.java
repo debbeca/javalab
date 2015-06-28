@@ -5,9 +5,10 @@ import java.util.Collection;
 
 //import matlabcall.MatlabCallTest;
 
-import threads.CrawlingThread;
-import threads.LinkStack;
+
 import websphinx.Link;
+import webwatch.threads.CrawlingThread;
+import webwatch.threads.LinkStack;
 
 public class ImageLinksFetcher {
 

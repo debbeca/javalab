@@ -1,4 +1,4 @@
-package iomanager;
+package webwatch.iomanager;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -18,13 +18,13 @@ import java.util.Iterator;
  * */
 public class Dictionnary {
 
-	public static String FilePath = "C:/Users/walid/Desktop/dictionnary.txt";
+	public static String FilePath = "badwords.txt";
 	
 	public static void main(String args[])
 	  {
 		Dictionnary dico = new Dictionnary();
 		dico.append("cut");
-		System.out.println(dico.readToString());
+		//System.out.println(dico.readToString());
 		System.out.println(dico.listToRegEx(dico.readToList()));
 		
 	  }
@@ -67,7 +67,7 @@ public class Dictionnary {
 			  //Read File Line By Line
 			  while ((strLine = br.readLine()) != null)   {
 			  // Print the content on the console
-			  //System.out.println (strLine);
+			  
 			  result.add(strLine);
 			  }
 			  //Close the input stream
@@ -84,6 +84,7 @@ public class Dictionnary {
 		for(Iterator<String> i = query.iterator(); i.hasNext(); )
 		{
 			result= result +"|"+ i.next(); 
+		//	System.out.println(result);
 		}
 		return(result.substring(1));
 	}

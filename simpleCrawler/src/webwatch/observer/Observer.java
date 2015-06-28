@@ -1,4 +1,4 @@
-package observer;
+package webwatch.observer;
 
 abstract class Observer { 
 	protected Subject subj; 

@@ -1,4 +1,4 @@
-package threads;
+package webwatch.threads;
 
 import java.util.ArrayList;
 import java.util.Collection;

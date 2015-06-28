@@ -1,11 +1,12 @@
-package observer;
+package webwatch.crawling.test;
 
 import java.net.URL;
 import java.util.Scanner;
 
 import websphinx.Link;
-import crawling.ContentCrawler;
-import crawling.Frequency;
+import webwatch.crawling.ContentCrawler;
+import webwatch.crawling.Frequency;
+import webwatch.observer.BinObserver;
 
 public class ObserverDemo {
 	  public static void main( String[] args ) {
@@ -18,7 +19,8 @@ public class ObserverDemo {
 		    	
 		     crawler.setRoot(new Link(new URL("http://wildjungleharry.blogspot.com/2011/08/bang-bang-i-shot-him-down-bang-bang-he.html")));
 		      crawler.run();
-		      crawler.clear();
+		      System.out.println("again..");
+		    crawler.clear();
 		      Thread.sleep (1000);
 		      }
 		    	} catch (Exception e) {

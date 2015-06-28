@@ -5,8 +5,8 @@ import imgdownload.ImageLinksFetcher;
 import java.util.ArrayList;
 import java.util.Collection;
 
-import threads.CrawlingThread;
-import threads.LinkStack;
+import webwatch.threads.CrawlingThread;
+import webwatch.threads.LinkStack;
 
 public class LinkStackTest {
 

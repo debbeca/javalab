@@ -1,11 +1,11 @@
-package threads;
+package webwatch.threads;
 
 import java.net.URL;
 
 import websphinx.Link;
-import crawling.ContentCrawler;
-import crawling.Frequency;
-import observer.BinObserver;
+import webwatch.crawling.ContentCrawler;
+import webwatch.crawling.Frequency;
+import webwatch.observer.BinObserver;
 public class CrawlingThread implements Runnable  {
 public String threadID;
 	public String link;

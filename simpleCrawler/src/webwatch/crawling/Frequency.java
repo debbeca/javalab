@@ -1,5 +1,5 @@
-package crawling;
-import observer.*;
+package webwatch.crawling;
+import webwatch.observer.*;
 public class Frequency extends Subject {
 	
 public int occurence;
